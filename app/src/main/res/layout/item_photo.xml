@@ -3,25 +3,62 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ivPhoto"
+        android:id="@+id/ivProfilePhoto"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:minHeight="50dp" />
+        android:height="75dp"
+        android:width="75dp"
+        android:contentDescription="@string/imageString" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Text"
+        android:id="@+id/tvUsername"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivProfilePhoto"
+        android:layout_toEndOf="@+id/ivProfilePhoto"
+        android:layout_alignBottom="@id/ivProfilePhoto"
+        android:layout_alignTop="@+id/ivPhoto"
+        android:textSize="15sp"
+        android:ellipsize="end" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCreatedTime"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvUsername"
+        android:layout_toEndOf="@+id/tvUsername"
+        android:layout_alignBottom="@id/tvUsername"
+        android:layout_alignTop="@+id/ivPhoto"
+        android:textSize="15sp"
+        android:ellipsize="end" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPhoto"
+        android:layout_below="@+id/ivProfilePhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:minHeight="50dp"
+        android:contentDescription="@string/imageString"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/tvCaption"
         android:layout_below="@+id/ivPhoto"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="20px"
+        android:textSize="20sp"
         android:maxLines="3"
         android:ellipsize="end" />
 

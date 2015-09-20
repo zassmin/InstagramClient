@@ -64,8 +64,11 @@ public class PhotosActivity extends ActionBarActivity {
                         JSONObject photoJson = photosJson.getJSONObject(i);
                         // decode attributes
                         InstagramPhoto photo = new InstagramPhoto();
+                        // TODO: use DateUtils for parsing
+                        photo.created_time = photoJson.getString("created_time");
                         // author name: {data => [x] => user => username}
                         photo.username = photoJson.getJSONObject("user").getString("username");
+                        photo.profilePictureUrl = photoJson.getJSONObject("user").getString("profile_picture");
                         // caption: {data => [x] => caption => text}
                         photo.caption = photoJson.getJSONObject("caption").getString("text");
                         // url: {data => [x] => images => standard_resolution => url}
