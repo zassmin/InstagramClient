@@ -35,13 +35,15 @@ public class InstagramPhotosAdapter extends ArrayAdapter {
         TextView tvCaption = (TextView) convertView.findViewById(R.id.tvCaption);
         TextView tvUsername = (TextView) convertView.findViewById(R.id.tvUsername);
         TextView tvCreatedTime = (TextView) convertView.findViewById(R.id.tvCreatedTime);
+        TextView tvLikes = (TextView) convertView.findViewById(R.id.tvLikes);
         ImageView ivPhoto = (ImageView) convertView.findViewById(R.id.ivPhoto);
         ImageView ivProfilePhoto = (ImageView) convertView.findViewById(R.id.ivProfilePhoto);
 
         // insert the item data into each of the items
         tvCaption.setText(photo.caption);
         tvUsername.setText(photo.username);
-        tvCreatedTime.setText(photo.created_time);
+        tvCreatedTime.setText(photo.prettyTime());
+        tvLikes.setText(photo.countString());
 
         // clear out image view if it was recycled
         ivPhoto.setImageResource(0);
