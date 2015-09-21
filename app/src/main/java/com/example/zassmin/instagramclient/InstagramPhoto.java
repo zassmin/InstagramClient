@@ -15,7 +15,7 @@ public class InstagramPhoto {
     public int likesCount;
 
     public String countString() {
-        return this.likesCount + " likes";
+        return "♥ " + this.likesCount + " likes";
     }
 
     // TODO: move these into a different file that's just meant for parsing
