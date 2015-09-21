@@ -21,6 +21,7 @@ import java.util.List;
 
 public class PhotosActivity extends ActionBarActivity {
 
+    // NOTE: Is there a best practice to how we safely story secret keys?
     public static final String CLIENT_ID = "";
     private static final String ROOT_KEY = "data";
     private ArrayList<InstagramPhoto> photos;
