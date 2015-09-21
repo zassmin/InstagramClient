@@ -41,7 +41,7 @@ public class PhotosActivity extends ActionBarActivity {
         // set the adapter
         lvPhotos.setAdapter(aPhotos);
 
-        // SEND OUT API REQUEST - How come it's last?
+        // NOTE: SEND OUT API REQUEST - How come it's last?
         fetchPopularPhotos();
     }
 

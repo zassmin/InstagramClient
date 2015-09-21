@@ -51,7 +51,10 @@ public class InstagramPhotosAdapter extends ArrayAdapter {
 
         // load image using picasso
         Picasso.with(getContext()).load(photo.imageUrl).into(ivPhoto);
-        Picasso.with(getContext()).load(photo.profilePictureUrl).into(ivProfilePhoto);
+        // Picasso.with(activity).load(mayorShipImageLink).transform(new CircleTransform()).into(ImageView);
+        Picasso.with(getContext()).load(photo.profilePictureUrl).transform(new CircleTransform()).into(ivProfilePhoto);
+        ivProfilePhoto.setAdjustViewBounds(true);
+
         // return the created item as a view
         return convertView;
     }

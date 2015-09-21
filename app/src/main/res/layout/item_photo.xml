@@ -12,8 +12,7 @@
         android:layout_alignParentStart="true"
         android:adjustViewBounds="true"
         android:scaleType="fitXY"
-        android:height="75dp"
-        android:width="75dp"
+        android:padding="5dp"
         android:contentDescription="@string/imageString" />
 
     <TextView
