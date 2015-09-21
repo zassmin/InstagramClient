@@ -8,4 +8,4 @@
   * Advanced: Display each user profile image using a RoundedImageView  
 
 Walkthrough
-![walkthrough](http://imgur.com/iMR4RDK)
+![Walkthrough](https://media.giphy.com/media/3o85xDyhPm6uEk5IMo/giphy.gif)
